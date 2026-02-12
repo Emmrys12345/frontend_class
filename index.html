@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon Portfolio</title>
+    
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+        <section id="projects">
+  <h2>Projects</h2>
+  <img src="images/project_icon.png" alt="Projects Icon" class="section-icon">
+</section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+
+          <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <div class="profile-placeholder">Profile Picture</div>
+    <p>Hello! I’m Falcon, a frontend developer learning HTML, CSS, and JavaScript. I build professional web interfaces with responsive design.</p>
+          </section>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="skill">
+                <label>HTML</label>
+                <div class="skill-bar">
+                    <div class="skill-level" data-width="90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <label>CSS</label>
+                <div class="skill-bar">
+                    <div class="skill-level" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <label>JavaScript</label>
+                <div class="skill-bar">
+                    <div class="skill-level" data-width="70%"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Frontend Training</td>
+                    <td>Practice HTML, CSS, and forms</td>
+                    <td>3 weeks</td>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>Professional personal portfolio</td>
+                    <td>2 weeks</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234..." pattern="[0-9]{10}" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+                <label for="skilllevel">Skill Level:</label>
+                <select id="skilllevel" name="skilllevel">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Skill Bars Animation -->
+    <script>
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.skill-level').forEach(bar => {
+                let width = bar.dataset.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            });
+        });
+    </script>
+
+</body>
+</html>
