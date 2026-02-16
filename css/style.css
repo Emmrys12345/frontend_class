@@ -45,4 +45,35 @@ footer {
     text-align: center;
     padding: 15px;
     background-color: #1a0f2e;
+}/* Skill Bar Container */
+.skill-bar {
+    background-color: #1a0f2e;
+    border-radius: 20px;
+    margin-bottom: 15px;
 }
+
+/* Skill Fill */
+.skill {
+    padding: 5px;
+    border-radius: 20px;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+}
+
+/* Individual Skill Levels */
+.html {
+    width: 90%;
+    background-color: #ff6b6b;
+}
+
+.css {
+    width: 80%;
+    background-color: #4ecdc4;
+}
+
+.js {
+    width: 60%;
+    background-color: #ffd166;
+}
+
